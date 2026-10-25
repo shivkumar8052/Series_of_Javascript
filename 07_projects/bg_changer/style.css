@@ -1,0 +1,25 @@
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    box-shadow: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;    
+}
+
+p{
+    margin-top: 30px;
+    font-size: 20px;
+    color: black;
+    font-weight:bold;
+  
+    
+}
+
+.container{
+    text-align: center;
+}
