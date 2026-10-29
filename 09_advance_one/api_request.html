@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //API Request using XMLhttpRequest ................
+    //CREATING OBJECT.............
+  const xhr = new XMLHttpRequest();
+  const Request_url ='https://api.github.com/users/shivkumar8052'
+  xhr.open("GET", Request_url);
+  xhr.send();
+  //Request handling ...........
+  xhr.onreadystatechange = function(){
+    if (xhr.readyState === 4) {
+        const data = JSON.parse(this.responseText);
+        // console.log(typeof data); 
+         
+        // console.log(data.public_repos)    
+    }
+    // console.log(xhr.status)
+
+  }
+ 
+  
+
+</script>
+</html>

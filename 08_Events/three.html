@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CHAI AUR JAVASCRIPT</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    //creation of function ...............
+    const name = function(str){
+        console.log(str,Date.now() );
+    }
+    
+   let intervalID;
+//excess start button ................
+     document.querySelector('#start').addEventListener('click', function(){
+          intervalID = setInterval(name,1000,"hello");
+    })
+    
+    //excess stop button ............................
+    document.querySelector('#stop').addEventListener('click', function(){
+         clearInterval(intervalID);
+    })
+
+   
+
+</script>
+</html>
